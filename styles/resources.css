@@ -1,0 +1,37 @@
+#resource__container{
+    width: 95%;
+    height: 20vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 10px;
+    border: 1px solid #f7a943;
+  
+    background-color: #0a1929;
+    box-shadow: 10px 10px 60px #000;
+  }
+
+.resources{
+    padding: 50px 100px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #f7a943;
+  
+    background-color: #0a1929;
+    box-shadow: 10px 10px 60px #000;
+  
+}
+
+.resource__link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.resource__link:hover{
+    color: #f7a943;
+}

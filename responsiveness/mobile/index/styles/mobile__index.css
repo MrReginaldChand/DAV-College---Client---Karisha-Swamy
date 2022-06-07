@@ -1,0 +1,83 @@
+/* Responsive Mobile*/
+
+@media only screen and (max-width: 1111px) {
+  /* Mission Vision Paragraph */
+  .mission__vision__paragraph {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Mission Vision Container */
+  #mission__vision__container {
+    flex-direction: column;
+  }
+
+  /* Mission Vision Box */
+  .mission__vision__box {
+    width: 100%;
+    height: 50%;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  /* Mission Vision Paragraph */
+  .mission__vision__paragraph {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  /* Mission Vision Paragraph */
+  .mission__vision__paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 210px) {
+  /* Main */
+  #main__container {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 165px) {
+  /* Main */
+  #main__container {
+    height: 100vh;
+  }
+
+  /* Mission Vision Box */
+  .mission__vision__box {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  /* Main */
+  #main__container {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  /* Main */
+  #main__container {
+    height: 135vh;
+  }
+}
+
+@media only screen and (max-height: 300px) {
+  /* Main */
+  #main__container {
+    height: 270vh;
+  }
+}
+
+@media only screen and (max-height: 200px) {
+  /* Main */
+  #main__container {
+    height: 250vh;
+  }
+}

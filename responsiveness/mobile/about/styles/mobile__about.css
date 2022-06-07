@@ -1,0 +1,18 @@
+/* About page responsiveness - mobile */
+
+@media only screen and (max-width: 1000px) {
+  /* Contact and Map Container */
+  #contact__map__container {
+    flex-direction: column;
+    min-height: 800px;
+  }
+
+  /* About contact and map box */
+  .about__contact__and__map__box {
+    margin: 20px 0;
+  }
+
+  .mapouter {
+    padding: 20px 0;
+  }
+}

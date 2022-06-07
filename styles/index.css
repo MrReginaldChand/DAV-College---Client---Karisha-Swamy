@@ -1,0 +1,91 @@
+/* Index [Home page] Styles */
+
+/* Banner */
+#banner {
+  width: 95%;
+  height: 70px;
+  margin: 20px auto;
+
+  position: relative;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: #0a1929;
+  box-shadow: 10px 10px 60px #000;
+}
+
+#banner__text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  color: #fff;
+}
+
+/* MAIN -- Mission Vision and more */
+#main__container {
+  width: 95%;
+  height: 70vh;
+  margin: 10px auto;
+
+  position: relative;
+
+  border-radius: 10px;
+
+  background-color: #0a1929;
+  box-shadow: 10px 10px 60px #000;
+}
+
+/* Mission Vision Container */
+#mission__vision__container {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border-radius: 10px;
+
+  background-color: transparent;
+}
+
+/* Mission Vision Box */
+.mission__vision__box {
+  width: 45%;
+  height: 90%;
+  padding: 20px;
+
+  border-radius: 10px;
+  border: 1px solid #f7a943;
+
+  background-color: #0a1929;
+  box-shadow: 10px 10px 60px #000;
+}
+
+/* Mission Vision Title */
+.mission__vision__title {
+  margin: 10px 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Mission Vision Paragraph */
+.mission__vision__paragraph {
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: justify;
+  color: #fff;
+}

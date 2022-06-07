@@ -1,0 +1,74 @@
+/* About Page Styles */
+
+/* History Container */
+#history__container{
+  width: 95%;
+  min-height: 1343px;
+  margin: 0 auto;
+  padding: 20px;
+
+  position: relative;
+
+  border-radius: 10px;
+  border: 1px solid #f7a943;
+
+  background-color: #0a1929;
+  box-shadow: 10px 10px 60px #000;
+}
+
+/* Contact Map Container */
+#contact__map__container{
+  width: 95%;
+  min-height: 500px;
+  margin: 20px auto;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  border: 1px solid #f7a943;
+
+  background-color: #0a1929;
+  box-shadow: 10px 10px 60px #000;
+}
+
+/* Email */
+#school__email{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+#school__email:hover{
+  color: #f7a943;
+}
+
+/* About contact and map box */
+
+.about__contact__and__map__box{
+  width: 100%;
+  height: 50vh;
+  padding: 20px;
+  margin: 0 20px;
+
+  position: relative;
+
+  border-radius: 10px;
+  border: 1px solid #f7a943;
+
+  background-color: #0a1929;
+  box-shadow: 10px 10px 60px #000;
+}
+
+.mapouter{
+  width: 100%;
+  height: 50vh;
+  padding: 0 20px;
+  position: relative;
+}
+
+.gmap_canvas{
+  border-radius: 10px;
+}

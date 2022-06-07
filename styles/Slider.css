@@ -1,0 +1,222 @@
+
+/* Slideshow */
+.slider__container {
+    width: 95%;
+    height: 60vh;
+    margin: 110px auto 20px auto;
+  
+    border-radius: 10px;
+    border: 1px solid #f7a943;
+  
+    position: relative;
+  
+    animation-delay: 0.625s;
+    overflow: hidden;
+  }
+  
+  .shutters {
+    position: absolute;
+    height: 150vmax;
+    width: 150vmax;
+    left: calc(50% - 75vmax);
+    top: calc(50% - 75vmax);
+    pointer-events: none;
+    z-index: 2;
+    animation: rotateFrame 10s linear infinite;
+  }
+  @keyframes rotateFrame {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  .shutters:before,
+  .shutters:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    background-color: #f7a943;
+    pointer-events: auto;
+  }
+  .shutters:before {
+    bottom: 50%;
+    animation: openTop 5s infinite;
+  }
+  @keyframes openTop {
+    0% {
+      transform: translate3d(-50%, 0, 0);
+      animation-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
+    }
+    40% {
+      transform: translate3d(-50%, -65vmax, 0);
+      animation-timing-functon: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    70% {
+      transform: translate3d(-50%, -65vmax, 0);
+      animation-timing-functon: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+      animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+  }
+  .shutters:after {
+    top: 50%;
+    animation: openBottom 5s infinite;
+  }
+  @keyframes openBottom {
+    0% {
+      transform: translate3d(-50%, 0, 0);
+      animation-timing-function: cubic-bezier(0.8, 0, 0.1, 1);
+    }
+    40% {
+      transform: translate3d(-50%, 65vmax, 0);
+      animation-timing-functon: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    70% {
+      transform: translate3d(-50%, 65vmax, 0);
+      animation-timing-functon: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+      animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+  }
+  .slides {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f7a943;
+  }
+  .slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation: showHideSlide infinite 20s steps(1);
+  }
+  @keyframes showHideSlide {
+    0% {
+      opacity: 1;
+      pointer-events: auto;
+      z-index: 1;
+    }
+    25% {
+      opacity: 0;
+      pointer-events: none;
+      z-index: -1;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+      z-index: -1;
+    }
+  }
+  
+  /* If problems occur decrease slides in html and css to 4 [Edit slides element] and [nth child element] */
+  .slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .slide:nth-child(1) .slideBg {
+    background-image: url("../assets/slideshow/slide1.jpeg");
+  }
+  .slide:nth-child(2) {
+    animation-delay: 5s;
+  }
+  .slide:nth-child(2) .slideBg {
+    background-image: url("../assets/slideshow/slide2.jpg");
+  }
+  .slide:nth-child(3) {
+    animation-delay: 10s;
+  }
+  .slide:nth-child(3) .slideBg {
+    background-image: url("../assets/slideshow/slide3.jpeg");
+  }
+  .slide:nth-child(4) {
+    animation-delay: 15s;
+  }
+  .slide:nth-child(4) .slideBg {
+    background-image: url("../assets/slideshow/slide4.jpeg");
+  }
+  
+  .slide:nth-child(5) {
+    animation-delay: 20s;
+  }
+  .slide:nth-child(5) .slideBg {
+    background-image: url("../assets/slideshow/slide5.jpeg");
+  }
+  .slide:nth-child(6) {
+    animation-delay: 25s;
+  }
+  .slide:nth-child(6) .slideBg {
+    background-image: url("../assets/slideshow/slide6.jpeg");
+  }
+  .slide:nth-child(7) {
+    animation-delay: 30s;
+  }
+  .slide:nth-child(7) .slideBg {
+    background-image: url("../assets/slideshow/slide7.jpeg");
+  }
+  
+  .slideBg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.2);
+  
+    animation: bgInOut 5s infinite;
+  }
+  
+  @keyframes bgInOut {
+    0% {
+      transform: rotate(-45deg) scale(1.1);
+      animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    33% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    66% {
+      transform: rotate(0deg);
+      animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+    100% {
+      transform: rotate(45deg) scale(0.9);
+    }
+  }
+  
+  /* Use slide content if you want to display text on top of slide show */
+  .slideContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    opacity: 1;
+    color: white;
+    line-height: 0.8;
+    text-align: center;
+    letter-spacing: -0.025em;
+    text-shadow: 0 0 0.5em rgba(179, 64, 26, 0.25);
+    transform: translate3d(-50%, -50%, 0);
+    mix-blend-mode: lighten;
+  }
+  .slideContent span {
+    display: block;
+    font-size: 15vmin;
+  }

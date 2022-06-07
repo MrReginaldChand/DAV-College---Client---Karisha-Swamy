@@ -1,0 +1,135 @@
+/* Header */
+#header {
+  width: 95%;
+  height: 70px;
+  margin: 20px auto;
+  z-index: 100;
+
+  border-radius: 8px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #0a1929;
+  box-shadow: 10px 10px 60px #000;
+}
+
+/* Navbar */
+
+#navbar {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo__container {
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+
+  position: relative;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Hamburger Container */
+#hamburger__container {
+  width: 70px;
+  height: 50px;
+  padding: 10px;
+
+  display: none;
+
+  z-index: 400;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid transparent;
+
+  transition: 1s ease;
+}
+
+#hamburger__container:hover {
+  border: 1px solid #f7a943;
+}
+
+/* Hamburger Lines */
+.hamburger__lines {
+  width: 40px;
+  height: 2px;
+  margin: 5px;
+
+  border-radius: 10px;
+
+  background-color: #f7a943;
+}
+
+.hamburger__lines:nth-child(2) {
+  width: 30px;
+}
+
+.hamburger__lines:last-child {
+  width: 20px;
+}
+
+/* Changes icon style on click */
+
+.hamburger__lines__first__child {
+  width: 20px;
+}
+.hamburger__lines__third__child {
+  width: 40px;
+}
+
+/* Navmenu */
+
+.nav__menu__container {
+  display: flex;
+}
+
+.navlist {
+  margin: 0 10px;
+  list-style: none;
+}
+
+.navlist:nth-child(3) {
+  cursor: pointer;
+}
+
+/* Navlink */
+.navlink {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  display: inline-block;
+
+  color: #f7a943;
+}
+
+.navlink:active {
+  transform: scale(0.95);
+}
+
+.navlink:hover {
+  color: #fff;
+}

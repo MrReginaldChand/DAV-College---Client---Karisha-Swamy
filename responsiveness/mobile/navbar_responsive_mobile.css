@@ -1,0 +1,86 @@
+/* Responsive Mobile */
+
+@media only screen and (max-width: 1000px) {
+  /* Logo Container */
+  .logo__container:nth-child(3) {
+    display: none;
+  }
+
+  /* Hamburger */
+  #hamburger__container {
+    display: block;
+  }
+
+  /* Navmenu */
+  .nav__menu__container {
+    width: 94%;
+    height: 95vh;
+
+    overflow-y: scroll;
+    margin: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    transition: 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: scale(0);
+
+    border-radius: 10px;
+    border: 1px solid #f7a943;
+
+    background-color: #0a1929;
+    box-shadow: 10px 10px 60px #000;
+  }
+
+  /* Activates the navmenu upon click of hamburger */
+  .show__nav__menu {
+    transform: scale(1);
+  }
+
+  .navlink {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Navlink */
+  .navlink {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* Navlink */
+  .navlink {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 316px) {
+  /* Navlink */
+  .navlink {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 160px) {
+  /* Navlink */
+  .navlink {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  /* Navlink */
+  .navlink {
+    font-size: 1rem;
+  }
+}

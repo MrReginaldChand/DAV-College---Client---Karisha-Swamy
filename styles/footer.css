@@ -1,0 +1,35 @@
+/* Footer */
+
+/* Footer Container */
+#footer__container {
+  width: 95%;
+  height: 70px;
+  margin: 20px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background-color: #0a1929;
+  box-shadow: 10px 10px 60px #000;
+}
+
+/* Footer Text */
+.footer__text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  text-align: center;
+
+  color: #f7a943;
+}
+
+/* Moe Link */
+#moe__link {
+  text-decoration: none;
+}
+
+#moe__link:hover {
+  color: #fff;
+}
