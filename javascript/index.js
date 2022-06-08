@@ -15,3 +15,21 @@ navMenuIconOpen.addEventListener("click", () => {
   hamburgerLinesFirstChild.classList.toggle("hamburger__lines__first__child"); // Toggles - Changes hamburger lines
   hamburgerLinesThirdChild.classList.toggle("hamburger__lines__third__child");
 });
+
+// Departments page -- Vertical Tabs
+
+const activateDepartments = (evt, cityName) => {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("department__info");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("department__nav__links");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();

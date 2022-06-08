@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../icon/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/departments.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/Slider.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="./responsiveness/mobile/navbar_responsive_mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../responsiveness/mobile/index/styles/mobile__index.css"
+    />
+    <title>DAV College - HOME</title>
+  </head>
+  <body>
+    <header id="header">
+      <navbar id="navbar">
+        <div class="logo__container">
+          <img
+            src="./assets/navbar/logo/logos/logo_school.png"
+            alt="Dav College"
+            class="logo"
+          />
+        </div>
+
+        <ul class="nav__menu__container">
+          <li class="navlist">
+            <a href="/" class="navlink">Home</a>
+          </li>
+          <li class="navlist">
+            <a href="./about.html" class="navlink">About</a>
+          </li>
+          <li class="navlist">
+            <a href="./departments.html" class="navlink">Departments</a>
+          </li>
+          <li class="navlist">
+            <a href="./school_programmes.html" class="navlink"
+              >School Programmes</a
+            >
+          </li>
+          <li class="navlist">
+            <a href="./resources.html" class="navlink">Resources</a>
+          </li>
+          <li class="navlist">
+            <a href="./photo_gallery.html" class="navlink">Photo Gallery</a>
+          </li>
+        </ul>
+
+        <div class="logo__container">
+          <img
+            src="./assets/navbar/logo/logos/Logo_Arya_Samaj.png"
+            alt="Dav College"
+            class="logo"
+          />
+        </div>
+        <div id="hamburger__container">
+          <div class="hamburger__lines"></div>
+          <div class="hamburger__lines"></div>
+          <div class="hamburger__lines"></div>
+        </div>
+      </navbar>
+    </header>
+
+    <div class="slider__container">
+      <div class="slides">
+        <div class="slide">
+          <div class="slideBg"></div>
+        </div>
+        <div class="slide">
+          <div class="slideBg"></div>
+        </div>
+        <div class="slide">
+          <div class="slideBg"></div>
+        </div>
+        <div class="slide">
+          <div class="slideBg"></div>
+        </div>
+        <div class="slide">
+          <div class="slideBg"></div>
+        </div>
+        <div class="slide">
+          <div class="slideBg"></div>
+        </div>
+        <div class="slide">
+          <div class="slideBg"></div>
+        </div>
+      </div>
+      <div class="shutters"></div>
+    </div>
+
+    <main id="main__container">
+      <div class="department__nav">
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__agriculture')"
+          id="defaultOpen"
+        >
+          Department of Agriculture
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__commerce')"
+        >
+          Department of Commerce
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__computer__science')"
+        >
+          Department of Computer Studies
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__home__economics')"
+        >
+          Department of Home Economics
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__industrial__arts')"
+        >
+          Department of Industrial Arts
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__languages')"
+        >
+          Department of Languages
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__mathmatics__and__physics')"
+        >
+          Department of Mathmatics & Physics
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__office__technology')"
+        >
+          Department of Office Technology
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__pemac')"
+        >
+          Department of PEMAC
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__science')"
+        >
+          Department of Science
+        </button>
+        <button
+          class="department__nav__links"
+          onclick="activateDepartments(event, 'department__of__social__science')"
+        >
+          Department of Social Science
+        </button>
+      </div>
+
+      <div id="department__of__agriculture" class="department__info">
+        <img
+          src="./assets/departments/agriculture/Agriculture.jpg"
+          alt="Department of Agriculture"
+          class="department__img"
+        />
+        <h3>HOD's Message</h3>
+        <p>
+          Agriculture science is a dynamic subject enhancing students with
+          management of agricultural enterprise and enlightens students on
+          issues which have become a global phenomenon like food security and
+          climate change. This is a practical-oriented subject which not only
+          enables students to comprehend crop cultivation and livestock rearing
+          techniques but also develop understanding of sustainable farming
+          techniques and management aspects of the farm. As we are battling the
+          fight against the pandemic, the onus is on us as educationist to bring
+          forward the importance of this important sector of the economy which
+          is almost neglected by many. We certainly deal with adolescents whose
+          minds are ready to absorb good ideas and interpret things on their own
+          with some or little guidance. The idea of stable agriculture based on
+          a tradition which is transmitted from generation to generation, has
+          been gradually replaced by the image of modern agricultural
+          enterprise, whose rapid revolution is propelled by progress of science
+          and technology.
+        </p>
+      </div>
+
+      <div id="department__of__commerce" class="department__info">
+        <img
+          src="./assets/departments/commerce/Commerce.jpg"
+          alt="Department of Commerce"
+          class="department__img"
+        />
+        <h3>HOD's Message</h3>
+        <p>
+          Though it was a challenging 2020, the new year commenced with our
+          vibrant team of seven raring to go. The team of seven: Jotika Chand
+          (Vice Principal) teaches Year 11 Accounting Matia Loga (Asst.
+          Principal) teaches Year 12 Economics Alitia Niukula teaches years 9 &
+          10 Commerce and Year 11 Accounting Shavina Singh teaches year 9 & 10
+          Commerce, Year 12 Economics and Year 13 Accounting Marica Dovimoala
+          teaches Years 9 & 10 Commerce, Years 12 & 13 Economics Sahil Lal
+          teaches Years 9 & 10 Commerce and Year 12 Economics. Sydney
+          Koroivulaono (Acting HOD) teaches Year 11 & 13 Economics and Year 12
+          Accounting. 2020 saw the entire world experience the effects of the
+          COVID 19 pandemic that arrived into Fiji in March. The DAV family like
+          every school in Fiji felt its repercussions when the school term was
+          shortened with much of it spent at home. The syllabus at all level was
+          slashed and with-it teaching time as well. This meant a revision of
+          the years teaching plans. The team of commerce professionals buckled
+          down as they tried their best to get their students exam ready. The
+          Dept managed to achieved eighty three percent of the school’s targets.
+          2021 started well and the dedicated team worked extremely hard to meet
+          ALL that was required of the team in all of their teaching
+          requirements. Responsibilities were managed and due dates met. Our
+          momentum was disrupted when everything ground to a halt as the second
+          wave of COVID 19 hit the nation in April Presently all teachers are
+          working from home adapting to the new norm of virtual teaching. The
+          syllabi have been reduced, but the commitment of the commerce team is
+          evident as teachers rose to the occasion utilizing the ZOOM platforms
+          to teach and interact with their students each week. We are fast
+          approaching the end of the school year with still much to do, your
+          commerce department endeavors to provide you our students the best
+          support possible during your time at DAV. Vinaka vakalevu and God
+          Bless.
+        </p>
+      </div>
+
+      <div id="department__of__computer__science" class="department__info">
+        <img
+          src="./assets/departments/computer/Computer.png"
+          alt="Department of Computer Studies"
+          class="department__img"
+        />
+        <h3>Introduction</h3>
+        <p>
+          Teaching in the internet age means we must teach tomorrow’s skills
+          today. The widespread use of computers in the public and private
+          sector has prompted computer studies to emphasize adequate preparation
+          of individuals up to organizations then the whole nation. This year
+          the students found it exciting to venture their knowledge into
+          Hardware and Software, even in the system software analysis and
+          design. How they process and their links between the components and
+          other resources evolved. It is an honor to teach the subject specially
+          when there are students who take great interest in the subject, and
+          continue into their future endeavors. Apart from Hardware and
+          Software, students also learned about management levels or how
+          information flows from top level management to lower level. ICloud was
+          introduced into the subject where students experienced log on to an
+          iCloud storages. The amazing part is when we see eagerness impressions
+          on students’ faces. Not only that, the students also learned how to
+          convert file types. The students do all sorts of online practicums on
+          installing of hardware and software, dismantling and re assembling,
+          presentations on audio visual, designing database, creating
+          spreadsheets, also sending emails with attachments through each
+          other’s emails. This year we were able to receive 10 new computers
+          with new textbooks. There are 217 students taking computer studies.
+          Currently the department has been taking zoom classes and sending
+          worksheets.
+        </p>
+      </div>
+      <div id="department__of__home__economics" class="department__info">
+        <img
+          src="./assets/departments/home_economics/Home_Economics.jpg"
+          alt="Department of Home Economics"
+          class="department__img"
+        />
+        <h3>HOD's Message</h3>
+        <p>
+          The importance of Home Economics cannot be overlooked when it comes to
+          building a healthy community. This subject has a clear link in
+          creating a prosperous present and future of every pupil. In this time
+          of rapid social challenges, imparting lifelong skills is highly
+          crucial. It endeavors to equip year 9-year 13 students for
+          opportunities and challenges they will meet in course of their lives
+          giving vital social, creative and management skills. Emphasis
+          throughout the program is placed on being able to adapt to life
+          situations in this modern world. It is a privilege to mould young
+          minds at such a prestigious institution. Proudly, the students produce
+          promising results and outstanding performance.
+        </p>
+      </div>
+      <div id="department__of__industrial__arts" class="department__info">
+        <img
+          src="./assets/departments/industrial_arts/Industrial_Arts.jpg"
+          alt="Department of Industrial Arts"
+          class="department__img"
+        />
+        <h3>HODS's Message</h3>
+        <p>
+          As garden must be cultivated in order to aid the economy of the house
+          hold so our children must be educated to aid the economy as whole.
+          Every task is a wonderful experience /. It is a journey towards
+          improving our leadership sand educating the younger ones to elevate
+          skills. Since Technology is advancing the TEST department has done a
+          tremendous work in implementing the new curriculum with the texts
+          books in the industrial Arts department for all the school through
+          Fiji. Our department has done best to accommodate all the change for
+          the future of students. DAV College has challenged every year in the
+          education arena for the astounding for all the levels progress of
+          subject changes It was the almighty who blessed us to work with such
+          hard working and skill full teachers where they actively participated
+          in any work assigned to them. The department teachers always give
+          their 100% to meet the department targets and the school targets for
+          both internal and external examination
+        </p>
+      </div>
+      <div id="department__of__languages" class="department__info">
+        <img
+          src="./assets/departments/language/Language.jpg"
+          alt="Department of Languages"
+          class="department__img"
+        />
+        <h3>HOD's Message</h3>
+        <p>
+          “A good education is a foundation for a better future” – Elizabeth
+          Warren Language is a vehicle for learning. It is through language that
+          learners access the content of the lesson and communicate their ideas,
+          whether they are learning through their first language or second
+          language. Language plays a crucial role in learning, as no matter what
+          the subject area, students assimilate new concepts when they listen,
+          talk, read and write about what they are learning. Language learning,
+          which should be a central part of any curriculum, can open many
+          potential career doors. The Language department at D. A. V. College
+          has 11 qualified and dynamic teachers who are committed to teach
+          English, Hindi and Vosa VakaViti from Years 9 – 13. The dedicated team
+          works tirelessly to ensure that teaching and learning takes place in a
+          conducive environment to achieve better results. The department has
+          enthusiastically taken part in various activities such as Department
+          Week, Library week, New Zealand Essay competition, Kaila Newspaper
+          Competition and Hindi Oratory and Drama to create greater awareness
+          amongst the students. With vast knowledge and proficiency in the three
+          languages taught at the College, the Language department members are
+          always ready to assist the students.
+        </p>
+      </div>
+      <div
+        id="department__of__mathmatics__and__physics"
+        class="department__info"
+      >
+        <img
+          src="./assets/departments/maths/Maths.png"
+          alt="Department of Mathematics and Physics"
+          class="department__img"
+        />
+        <h3>HOD's Message</h3>
+        <p>
+          Pure Mathematics and Physics are becoming ever more closely connected,
+          though their methods remain different, possibly, the two subjects will
+          ultimately unify, every branch of pure mathematics then having its
+          physical application, its importance in physics being proportional to
+          its interest in mathematics. Mathematics is the most beautiful and
+          most powerful creation of the human spirit. It’s the poetry of logical
+          ideas where you can do things which you can't do in the real world;
+          hence mathematics - the science of common sense and is a great
+          motivator for all humans because its career starts with zero and it
+          never ends (infinity). Mathematics is not a contemplative but a
+          creative subject; no one can draw much consolation from it when he has
+          lost the power or the desire to create; and that is apt to happen to a
+          mathematician rather soon. Cassius Jackson Keyser advocates that
+          “Mathematics, even in its present and most abstract state, is not
+          detached from life. It is just the ideal handling of the problems of
+          life.” hod3Physics that deals with the structure of matter and the
+          interactions between the fundamental constituents of the observable
+          universe. Its scope of study encompasses not only the behaviour of
+          objects under the action of given forces but also the nature and
+          origin of gravitational, electromagnetic, and nuclear force fields.
+          Its objective is the formulation of a few comprehensive principles
+          that bring together and explain all disparate phenomena. The ultimate
+          aim of Physics is to find a unified set of laws governing matter,
+          motion, and energy at the microscopic, macroscopic and the
+          extragalactic scale. To model the reality of Mathematics and Physics
+          despite these challenges times, our Department is positioned for a
+          bright future. The Department currently 7 well qualified teachers, all
+          graduates and experienced. The objective of the Department is to
+          transform young students into competent and motivated professionals
+          with sound theoretical and practical knowledge, create an atmosphere
+          which encourages learning, clear thinking and determination among
+          students by imparting quality education, cater to the emerging needs
+          of all the students for their overall development at all times. To
+          foster thinking skills among the Students as logical thinkers,
+          enabling them to function as productive citizens and prepare them well
+          for their Scientific and Social life. hod4 Finally, Mathematics, as
+          much as music or any other art, is one of the means by which we rise
+          to a complete self-consciousness as John Sullivan, inspires “The
+          significance of mathematics resides precisely in the fact that it is
+          an art; by informing us of the nature of our own minds it informs us
+          of much that depends on our minds”
+        </p>
+      </div>
+      <div id="department__of__office__technology" class="department__info">
+        <img
+          src="./assets/departments/office_technology/Office_Technology.png"
+          alt="Department of Office Technology"
+          class="department__img"
+        />
+        <h3>Introduction</h3>
+        <p>
+          Namaste I would like to welcome you all to the Office Technology
+          Department page. The Office Technology is the study of information
+          technology and business administration. It caters for students who
+          wish to proceed further in business-related fields. This subject is
+          offered from Year 9 to Year 13 in this institution. Currently, 232
+          students are enrolled in this program with 2 faculties. It is designed
+          to develop competencies in information technology, business
+          administrative systems and enterprise values and attributes as well as
+          introducing students to workplace skills. Parents and guardians are
+          encouraged to enroll their siblings in such life-long skill-based
+          subjects, so that in future every child becomes job creators rather
+          than job seekers.
+        </p>
+      </div>
+      <div id="department__of__pemac" class="department__info">
+        <img
+          src="./assets/departments/pemac/Pemac.jpg"
+          alt="Department of PEMAC"
+          class="department__img"
+        />
+        <h3>HOD's Message</h3>
+        <p>
+          Greetings from the PEMAC Department to the readers. The department has
+          two very enthusiastic and hardworking teachers who are trying their
+          best to implement the intended curriculum and carry out the
+          assessments respectively. The department has a firm belief that
+          impartation of knowledge is not confined to the four walls of the
+          classroom. Hence students are always given opportunity to extend and
+          explore their potentials by participating in physical activities such
+          as sports, Athletics at different levels, Inter-house meet, Zone meet
+          and Coca- cola games, soccer, netball, cricket, hockey and table
+          tennis. The department also organized and facilitated Duke of
+          Edinburgh International Award program. <br />
+          <br />
+          <strong
+            >ACTIVITIES: <br />
+            ATHLETICS</strong
+          >
+          <br />
+          <br />
+          Every year the department organizes the inter house meet for the
+          students. The athletes take part in track and field events. Every year
+          the best athletes are selected from the Inter house- meet to represent
+          D A V College in the Zone meet and from the zone meet those athletes
+          qualify for the National finals and participate in the Coca- cola
+          games. <br />
+          <br />
+          <strong>INTER FROM SPORTS</strong> <br />
+          <br />
+          The departments also organizers inter- form sports, soccer, volleyball
+          and Netball in conjunction with the student’s council every year
+          towards end of term one and term two. <br />
+          <br />
+          <strong>NETBALL</strong> <br />
+          <br />
+          The under 15, under17 and under 19 teams participated in the
+          tournaments organized by Secondary schools Netball Association. The
+          Under 15 and Under 19 soccer teams qualified secondary schools’
+          championship and participated in the tournament’s at National level.
+          <br />
+          <br />
+          <strong>SOCCER</strong> <br />
+          <br />
+          – soccer has been a thriving event for our school. Soccer has been a
+          tremendous success for our college up to Suva district and Southern
+          zone level. Under 19 and Under 15 teams have been crowned as Champion
+          after winning all its matches on a round robin basis for the past four
+          years in the Suva District. I would like to express my sincere
+          gratitude the Principal and staff of D A V College for assisting the
+          soccer teams during the games. I would like to thank the students,
+          parent’s teachers and administration for their continued support to
+          the department. Finally, I must render my heartfelt gratitude to the
+          management and the community for the continued support. I am adamant
+          that extensive resource which we have, together with the unconditional
+          and tireless support of the staff, the department has fulfilled
+          aspiration to everyone. We look forward to similar sentiments
+          expressed in future.
+        </p>
+      </div>
+      <div id="department__of__science" class="department__info">
+        <img
+          src="./assets/departments/science/Science.png"
+          alt="Department of Science"
+          class="department__img"
+        />
+        <h3>HOD's Message</h3>
+        <p>
+          Greetings and welcome to parents, guardians, friends and students of
+          DAV College. This platform has been prepared to allow you to access
+          academic information that will be the steps to a future you can look
+          forward to. It is the place where mental capabilities are developed,
+          inquisitive minds are encouraged and creative abilities are enhanced.
+          Information be it data or facts obtained in this platform should be
+          utilised and researched upon to increase knowledge.
+        </p>
+      </div>
+      <div id="department__of__social__science" class="department__info">
+        <img
+          src="./assets/departments/social_science/Social_Science.jpg"
+          alt="Department of Social Science"
+          class="department__img"
+        />
+        <h3>HOD's Message</h3>
+        <p>
+          The dynamic department consists of five dedicated and hardworking
+          teachers who have made the year successful. Social Science is
+          concerned with everyday living of an individual. It is the study of
+          the physical, social and cultural features, meeting the needs of the
+          individual throughout the lifespan and how they manage the resources
+          to achieve quality of life desired. The department offers subjects
+          like Geography, History and Social Science. The importance of these
+          subjects are as follows: Geography is a focus within the curriculum
+          for understanding and resolving issues about the environment and
+          sustainable development. It is also an important link between the
+          natural and Social Science. As pupils study geography, they encounter
+          different societies and cultures. History is really important because
+          it helps us understand why we live the way we are living and why we
+          are where we are as a species and country. Studying history allow us
+          to learn from the mistakes of our ancestors so we do not do the same
+          things they did and work to become a better place. The importance of
+          the Social Science: In general, Social Science focus on the study of
+          society and the relationship among individuals within the society.
+          Social Science covers a wide spectrum of subjects, including
+          economics, political science, sociology, history, archeology,
+          anthropology, and law. The teachers in the department continuously
+          guided and inspired the students to achieve the best in their academic
+          arena. Furthermore, the department organized the department week to
+          enhance more understanding of Geography, History and Social Science.
+          The students were engaged in Poster presentation, Quizzes, Oral
+          presentation, Speech, Flag competition and Character parade. Finally,
+          I must render my heartfelt gratitude to the Principal Mr. Amit. N.
+          Prasad the students and the community for the continued support. I
+          would like to sincerely thank my department teachers for their
+          dedication and hard work. I am adamant that extensive resources which
+          we have, together with the unconditional and tireless support of our
+          staff, the department has fulfilled aspiration to everyone.
+        </p>
+      </div>
+    </main>
+
+    <footer id="footer__container">
+      <div class="footer__text">
+        &copy; <b>Karisha Swamy</b>, Dav College Nabua - Fiji, &nbsp;2022 | All
+        Rights Reserved.
+
+        <a
+          href="http://www.education.gov.fj/"
+          class="footer__text"
+          id="moe__link"
+          target="_blank"
+          rel="noopener"
+          >MOE</a
+        >
+      </div>
+    </footer>
+    <script src="../javascript/index.js"></script>
+  </body>
+</html>
